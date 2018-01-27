@@ -1,0 +1,115 @@
+@import "src/theme/theme-variables";
+
+.root-container {
+  padding: 0;
+}
+
+.logo {
+  width: 100%;
+  max-width: 500px;
+  padding: 0 12px;
+}
+
+.icon {
+  width: 100px;
+}
+
+q {
+  font-style: italic;
+  font-size: 1.2rem;
+  quotes: "« " " »";
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-header .section-title {
+  font-size: 42px;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+}
+
+.section-header .section-title span {
+  color: map-get($theme-colors, primary);
+}
+
+.section-header .section-subtitle {
+  margin-top: 15px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section-header .lines {
+  width: 70px;
+  position: relative;
+  border-top: 2px solid map-get($theme-colors, primary);
+  margin: 15px auto auto;
+}
+
+.section-key-points {
+  background-color: $gray-100;
+}
+
+.section-get-started {
+  min-height: 500px;
+  background-color: map-get($theme-colors, primary);
+  color: $white;
+
+  .section-header .section-title {
+    color: $white;
+  }
+
+  .section-header .lines {
+    border-top: 2px solid $white;
+  }
+
+  .section-header .section-subtitle {
+    color: $white;
+  }
+}
+
+.section-company-logo {
+  min-height: 500px;
+
+  .section-header .lines {
+    border-top: 2px solid $white;
+  }
+}
+
+.item-boxes {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.item-boxes .icon {
+  width: 80px;
+  height: 80px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  display: inline-block;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
+.item-boxes h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.company-logo {
+  width: 80%;
+}
