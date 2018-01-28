@@ -77,6 +77,36 @@ q {
   .section-header .section-subtitle {
     color: $white;
   }
+
+  .terminal-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .terminal {
+      line-height: 30px;
+      letter-spacing: 0.0625em;
+      font-weight: 100;
+      width: 100%;
+      max-width: 720px;
+      padding: 16px;
+      background: $gray-800;
+      border-radius: 5px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .question {
+      color: $yellow;
+    }
+
+    .generator-text {
+      color: $gray-500;
+    }
+
+    .answer {
+      color: $blue;
+    }
+  }
 }
 
 .section-company-logo {
@@ -113,3 +143,4 @@ q {
 .company-logo {
   width: 80%;
 }
+
