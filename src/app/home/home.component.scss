@@ -112,8 +112,9 @@ q {
 .section-company-logo {
   min-height: 500px;
 
-  .section-header .lines {
-    border-top: 2px solid $white;
+  .red-heart {
+    margin: 0 12px;
+    color: $red;
   }
 }
 
