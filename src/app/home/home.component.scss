@@ -109,6 +109,15 @@ q {
   }
 }
 
+.section-whats-in-the-box {
+  background-color: $gray-100;
+
+  .box-container {
+    display: flex;
+    justify-items: center;
+  }
+}
+
 .section-company-logo {
   min-height: 500px;
 
