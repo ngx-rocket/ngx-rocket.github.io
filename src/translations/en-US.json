@@ -1,7 +1,43 @@
 {
-  "APP_NAME": "ngx-Rocket",
-  "About": "About",
-  "Hello world !": "Hello world !",
-  "Home": "Home",
-  "Version": "Version"
+  "APP_NAME": "ngX-Rocket",
+  "SECTION_NGX_ROCKET": {
+    "SUBTITLE": "Build incredible apps in record time!"
+  },
+  "SECTION_KEY_POINTS": {
+    "TITLE": "Easier, Better, Faster, Stronger",
+    "SUBTITLE": "Rocket start your Angular apps",
+    "KEY_POINT_1": {
+      "TITLE": "App generator",
+      "DESCRIPTION": "Extensible Angular 5+ enterprise-grade project generator based on angular-cli with best practices from the community."
+    },
+    "KEY_POINT_2": {
+      "TITLE": "Design and layout",
+      "DESCRIPTION": "Bootstrap, Angular Material or even Ionic are available, just pick one and start to code."
+    },
+    "KEY_POINT_3": {
+      "TITLE": "PWA and Cordova support",
+      "DESCRIPTION": "Save time and maintenance effort by creating Progressive Web App and mobile app with the same code base."
+    }
+  },
+  "SECTION_GET_STARTED": {
+    "TITLE": "Get started",
+    "SUBTITLE": "Generate and start your first app in 2 minutes."
+  },
+  "SECTION_IN_THE_BOX": {
+    "TITLE": "What's in the box?",
+    "SUBTITLE": "The app template is based on HTML5, TypeScript and Sass."
+  },
+  "SECTION_NEWS": {
+    "TITLE": "News",
+    "SUBTITLE": "Last publications on Medium",
+    "ALL_PUBLICATIONS": "See all publications"
+  },
+  "SECTION_COMPANY_LOGO": {
+    "SUBTITLE": "Some of the companies already using it."
+  },
+  "SECTION_BROWSER_COMPATIBILITY": {
+    "TITLE": "Browser compatibility",
+    "SUBTITLE": "Generated app works with all major browsers (Chrome, Firefox, IE, Edge, Safari, and Opera)."
+  },
+  "COPYRIGHT": "Thales ©2016-2018. Code licensed under an MIT-style License."
 }

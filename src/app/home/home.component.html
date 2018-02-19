@@ -1,40 +1,39 @@
 <div class="container-fluid root-container">
-  <section class="section text-center">
-    <h1>
+  <section class="section text-center section-ngx-rocket-logo">
+    <img class="background" src="assets/background-blur.jpg" alt="background"/>
+    <div class="content">
       <img class="logo" src="assets/ngx-rocket-logo-full.png" alt="ngx-rocket logo"/>
-      <div translate>Build incredible apps in record time!</div>
-    </h1>
+      <h1 translate>SECTION_NGX_ROCKET.SUBTITLE</h1>
+    </div>
   </section>
 
   <section class="section section-key-points">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Easier, Better, Faster, Stronger</h2>
+        <h2 class="section-title" translate>SECTION_KEY_POINTS.TITLE</h2>
         <div class="lines"></div>
-        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos!
-          Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="section-subtitle" translate>SECTION_KEY_POINTS.SUBTITLE</p>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-12">
           <div class="item-boxes">
-            <img class="icon" src="assets/ngx-rocket-logo.png" alt=" logo"/>
-            <h4>App generator</h4>
-            <p>Extensible Angular 5+ enterprise-grade project generator based on angular-cli with best practices from
-              the community.</p>
+            <i class="fa fa-code icon"></i>
+            <h4 translate>SECTION_KEY_POINTS.KEY_POINT_1.TITLE</h4>
+            <p translate>SECTION_KEY_POINTS.KEY_POINT_1.DESCRIPTION</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="item-boxes">
-            <img class="icon" src="assets/ngx-rocket-logo.png" alt=" logo"/>
-            <h4>Design and layout</h4>
-            <p>Bootstrap, Angular Material or even Ionic are available, you just have to choose one.</p>
+            <i class="fa fa-pencil icon"></i>
+            <h4 translate>SECTION_KEY_POINTS.KEY_POINT_2.TITLE</h4>
+            <p translate>SECTION_KEY_POINTS.KEY_POINT_2.DESCRIPTION</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="item-boxes">
-            <img class="icon" src="assets/ngx-rocket-logo.png" alt=" logo"/>
-            <h4>PWA and Cordova support</h4>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+            <i class="fa fa-mobile-phone icon"></i>
+            <h4 translate>SECTION_KEY_POINTS.KEY_POINT_3.TITLE</h4>
+            <p translate>SECTION_KEY_POINTS.KEY_POINT_3.DESCRIPTION</p>
           </div>
         </div>
       </div>
@@ -44,9 +43,9 @@
   <section class="section section-get-started">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Get started</h2>
+        <h2 class="section-title" translate>SECTION_GET_STARTED.TITLE</h2>
         <div class="lines"></div>
-        <p class="section-subtitle">Generate and start your first app in 2 minutes.</p>
+        <p class="section-subtitle" translate>SECTION_GET_STARTED.SUBTITLE</p>
       </div>
       <div class="terminal-container">
         <div class="terminal">
@@ -86,20 +85,65 @@
   <section class="section section-whats-in-the-box">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">What's in the box?</h2>
+        <h2 class="section-title" translate>SECTION_IN_THE_BOX.TITLE</h2>
         <div class="lines"></div>
-        <p class="section-subtitle">The app template is based on HTML5, TypeScript and Sass. The translation files use the common JSON format.</p>
+        <p class="section-subtitle" translate>SECTION_IN_THE_BOX.SUBTITLE</p>
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-4 box-container">
-          <img class="" src="assets/ngx-rocket-whats-in-the-box.png" alt="ngx-rocket box"/>
+          <img src="assets/ngx-rocket-whats-in-the-box.png" alt="ngx-rocket box"/>
         </div>
         <div class="col-sm-12 col-md-8">
-          <div>Typescript</div>
-          <div>Sass</div>
-          <div>Translation system</div>
-          <div>Some much things in it!</div>
+          <ul>
+            <li>Optimized build and bundling process with <a href="https://webpack.github.io" rel="nofollow">Webpack</a>
+            </li>
+            <li><a href="https://webpack.github.io/docs/webpack-dev-server.html" rel="nofollow">Development server</a>
+              with backend proxy and live reload
+            </li>
+            <li>Cross-browser CSS with <a href="https://github.com/postcss/autoprefixer">autoprefixer</a> and
+              <a href="https://github.com/ai/browserslist">browserslist</a></li>
+            <li>Internationalization managed by <a href="https://github.com/ngx-translate/core">ngx-translate</a>.</li>
+            <li>Asset revisioning for <a href="https://webpack.github.io/docs/long-term-caching.html" rel="nofollow">better
+              cache management</a></li>
+            <li>Unit tests using <a href="http://jasmine.github.io" rel="nofollow">Jasmine</a>, <a
+              href="https://karma-runner.github.io" rel="nofollow">Karma</a> and
+              <a href="https://github.com/GoogleChrome/puppeteer">headless Chrome</a></li>
+            <li>End-to-end tests using <a href="https://github.com/angular/protractor">Protractor</a></li>
+            <li>Static code analysis: <a href="https://github.com/palantir/tslint">TSLint</a>, <a
+              href="https://github.com/mgechev/codelyzer">Codelyzer</a>,
+              <a href="http://stylelint.io" rel="nofollow">Stylelint</a> and <a href="http://htmlhint.com/"
+                                                                                rel="nofollow">HTMLHint</a></li>
+            <li>Local knowledgebase server using <a href="https://github.com/sinedied/hads">Hads</a></li>
+            <li>Progressive Web App (PWA) support provided by @angular/service-worker</li>
+            <li>Native mobile application bundling is based on Cordova</li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-medium">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" translate>SECTION_NEWS.TITLE</h2>
+        <div class="lines"></div>
+        <p class="section-subtitle" translate>SECTION_NEWS.SUBTITLE</p>
+      </div>
+      <div class="cards-container">
+        <a class="card"
+           href="https://medium.com/ngx-rocket/the-missing-introduction-to-angular-and-modern-design-patterns-43e8815c2801">
+          <img class="card-img-top" src="assets/ngx-rocket-medium-post.jpeg" alt="medium post banner"/>
+          <div class="card-body">
+            <h5 class="card-title">The Missing Introduction to Angular and Modern Design Patterns</h5>
+            <p class="card-text">Angular (aka Angular 2, 4…) is a new framework completely rewritten from the ground
+              up, replacing the now well-known AngularJS framework…</p>
+          </div>
+        </a>
+      </div>
+      <div class="section-footer">
+        <p class="section-subtitle">
+          <a href="https://medium.com/ngx-rocket" translate>SECTION_NEWS.ALL_PUBLICATIONS</a>
+        </p>
       </div>
     </div>
   </section>
@@ -109,25 +153,103 @@
       <div class="section-header">
         <h2 class="section-title">They<i class="fa fa-heart red-heart" aria-hidden="true"></i>it</h2>
         <div class="lines"></div>
-        <p class="section-subtitle">Some of the companies already using it.</p>
+        <p class="section-subtitle" translate>SECTION_COMPANY_LOGO.SUBTITLE</p>
+      </div>
+      <div class="row company-row">
+        <div class="col-md-4 col-sm-12 text-center">
+          <img class="company-logo" src="assets/company-logo/thales.svg" alt="thales logo"/>
+        </div>
+
+        <div class="col-md-4 col-sm-12 text-center">
+          <img class="company-logo" src="assets/company-logo/schneider_electric.svg" alt="schneider electric logo"/>
+        </div>
+
+        <div class="col-md-4 col-sm-12 text-center">
+          <img class="company-logo" src="assets/company-logo/edf.svg" alt="edf logo"/>
+        </div>
+      </div>
+
+      <div class="row company-row">
+        <div class="col-md-4 offset-md-2 col-sm-12 text-center">
+          <img class="company-logo" src="assets/company-logo/rio_tinto.svg" alt="riotinto logo"/>
+        </div>
+
+        <div class="col-md-4 col-sm-12 text-center">
+          <img class="company-logo" src="assets/company-logo/accenture.svg" alt="accenture logo"/>
+        </div>
+      </div>
+      <!--
+      <div class="section-header">
+        <p class="section-subtitle">Wants to add yours to the list? <a href="">Just click here</a></p>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <section class="section section-browser-logo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" translate>SECTION_BROWSER_COMPATIBILITY.TITLE</h2>
+        <div class="lines"></div>
+        <p class="section-subtitle" translate>SECTION_BROWSER_COMPATIBILITY.SUBTITLE</p>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-12 text-center">
-          <img class="company-logo" src="assets/company-logo/thales.svg" alt="thales logo"/>
+        <div class="col-md-2 col-sm-4 text-center">
+          <img class="browser-logo" src="assets/browser-logo/chrome_128x128.png" alt="chrome logo"/>
         </div>
 
-        <div class="col-md-4 col-sm-12 text-center">
-          <img class="company-logo" src="assets/company-logo/thales.svg" alt="thales logo"/>
+        <div class="col-md-2 col-sm-4 text-center">
+          <img class="browser-logo" src="assets/browser-logo/edge_128x128.png" alt="edge logo"/>
         </div>
 
-        <div class="col-md-4 col-sm-12 text-center">
-          <img class="company-logo" src="assets/company-logo/thales.svg" alt="thales logo"/>
+        <div class="col-md-2 col-sm-4 text-center">
+          <img class="browser-logo" src="assets/browser-logo/firefox_128x128.png" alt="firefox logo"/>
         </div>
 
-      </div>
-      <div class="section-header">
-        <p class="section-subtitle">Wants to add your company to the list? <a href="">Just click here</a></p>
+        <div class="col-md-2 col-sm-4 text-center">
+          <img class="browser-logo" src="assets/browser-logo/internet-explorer_128x128.png" alt="IE logo"/>
+        </div>
+
+        <div class="col-md-2 col-sm-4 text-center">
+          <img class="browser-logo" src="assets/browser-logo/opera_128x128.png" alt="opera logo"/>
+        </div>
+
+        <div class="col-md-2 col-sm-4 text-center">
+          <img class="browser-logo" src="assets/browser-logo/safari_128x128.png" alt="safari logo"/>
+        </div>
+
       </div>
     </div>
   </section>
+
+  <section class="footer">
+    <span translate>COPYRIGHT</span>
+    <span>
+      <i class="fa fa-twitter"></i>
+      <a target="_blank"
+         href="https://twitter.com/hashtag/ngxrocket?src=hash">
+        #ngxrocket
+      </a>
+    </span>
+    <span>
+      <i class="fa fa-stack-overflow"></i>
+      ngxrocket
+    </span>
+    <span>
+      <i class="fa fa-medium"></i>
+      <a target="_blank"
+         href="https://medium.com/ngx-rocket">
+        ngX-Rocket
+      </a>
+    </span>
+
+    <span>
+      <i class="fa fa-github"></i>
+      <a target="_blank"
+         href="https://github.com/ngx-rocket/generator-ngx-rocket">
+        ngx-rocket
+      </a>
+    </span>
+  </section>
+
 </div>

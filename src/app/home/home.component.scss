@@ -14,36 +14,37 @@
   width: 100px;
 }
 
-q {
-  font-style: italic;
-  font-size: 1.2rem;
-  quotes: "« " " »";
-}
-
 .section {
   padding: 80px 0;
 }
 
 .section-header {
-  color: #fff;
+  color: $white;
   margin-bottom: 40px;
   text-align: center;
 }
 
-.section-header .section-title {
+.section-footer {
+  color: $white;
+  text-align: center;
+}
+
+.section-header .section-title,
+.section-footer .section-title {
   font-size: 42px;
   margin-top: 0;
   text-transform: uppercase;
   font-weight: 700;
   color: #333;
   position: relative;
+
+  span {
+    color: map-get($theme-colors, primary);
+  }
 }
 
-.section-header .section-title span {
-  color: map-get($theme-colors, primary);
-}
-
-.section-header .section-subtitle {
+.section-header .section-subtitle,
+.section-footer .section-subtitle {
   margin-top: 15px;
   color: #333;
   font-size: 14px;
@@ -55,6 +56,30 @@ q {
   position: relative;
   border-top: 2px solid map-get($theme-colors, primary);
   margin: 15px auto auto;
+}
+
+.section-ngx-rocket-logo {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .background {
+    position: absolute;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .content {
+    position: absolute;
+  }
+
+  h1 {
+    color: $white;
+  }
 }
 
 .section-key-points {
@@ -118,6 +143,31 @@ q {
   }
 }
 
+.section-medium {
+  background-color: map-get($theme-colors, primary);
+
+  .section-header .section-title,
+  a,
+  .section-header .section-subtitle {
+    color: $white;
+    text-decoration: none;
+  }
+
+  .section-header .lines {
+    border-top: 2px solid $white;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+
+    .card {
+      color: $gray-700;
+      max-width: 500px;
+    }
+  }
+}
+
 .section-company-logo {
   min-height: 500px;
 
@@ -125,23 +175,53 @@ q {
     margin: 0 12px;
     color: $red;
   }
+
+  .company-row {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+
+    .company-logo {
+      width: 70%;
+      padding: 10px;
+    }
+  }
+}
+
+.section-browser-logo {
+  background-color: $gray-100;
+
+  .browser-logo {
+    height: 80px;
+  }
+}
+
+.footer {
+  background-color: $gray-100;
+  min-height: 0;
+  border-top: 1px solid $gray-300;
+  padding: 12px 0;
+  color: $gray-800;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-evenly;
+
+  a {
+    color: $gray-800;
+  }
 }
 
 .item-boxes {
   text-align: center;
   padding: 0 15px;
   margin-bottom: 15px;
-}
 
-.item-boxes .icon {
-  width: 80px;
-  height: 80px;
-  padding: 4px;
-  text-align: center;
-  border: 1px solid #f1f1f1;
-  display: inline-block;
-  border-radius: 40px;
-  margin-bottom: 30px;
+  .icon {
+    height: 90px;
+    font-size: 70px;
+    color: map-get($theme-colors, primary);
+  }
 }
 
 .item-boxes h4 {
@@ -149,8 +229,3 @@ q {
   font-weight: 700;
   margin-bottom: 10px;
 }
-
-.company-logo {
-  width: 80%;
-}
-

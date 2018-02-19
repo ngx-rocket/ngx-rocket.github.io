@@ -9,7 +9,6 @@ export const environment = {
   serverUrl: '/api',
   defaultLanguage: 'en-US',
   supportedLanguages: [
-    'en-US',
-    'fr-FR'
+    'en-US'
   ]
 };
